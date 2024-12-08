@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета для трудоустройства</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Анкета для трудоустройства</h1>
+    </header>
+
+    <!-- Основная форма -->
+    <form action="submit.html" method="post" enctype="multipart/form-data">
+        <!-- Поля ввода -->
+        <label for="name">ФИО:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Номер телефона:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="position">Желаемая должность:</label>
+        <input type="text" id="position" name="position" required><br><br>
+
+        <label for="resume">Резюме (PDF):</label>
+        <input type="file" id="resume" name="resume" accept=".pdf" required><br><br>
+
+        <!-- Таблица с примером графика работы -->
+        <table border="1">
+            <caption>Пример графика работы</caption>
+            <tr>
+                <th>День недели</th>
+                <th>Рабочие часы</th>
+            </tr>
+            <tr>
+                <td>Понедельник</td>
+                <td>9:00 - 18:00</td>
+            </tr>
+            <tr>
+                <td>Вторник</td>
+                <td>9:00 - 18:00</td>
+            </tr>
+            <tr>
+                <td>Среда</td>
+                <td>9:00 - 18:00</td>
+            </tr>
+            <tr>
+                <td>Четверг</td>
+                <td>9:00 - 18:00</td>
+            </tr>
+            <tr>
+                <td>Пятница</td>
+                <td>9:00 - 18:00</td>
+            </tr>
+        </table><br>
+
+        <!-- Кнопки -->
+        <button type="submit">Отправить анкету</button>
+        <button type="reset">Сбросить данные</button>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Все права защищены</p>
+    </footer>
+</body>
+</html>
